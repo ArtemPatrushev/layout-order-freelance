@@ -17,6 +17,85 @@
 </head>
 
 <body>
+    <div class="blackout"></div>
+    <div class="subscription">
+        <div class="container">
+            <p class="subscription__header">Подпишитесь на рассылку</p>
+            <img src="./img/index-page/subscription.png" alt="photo">
+            <form class="user-form">
+                <div class="user-form__input">
+                    <input type="text" placeholder="Имя">
+                    <p>*</p>
+                </div>
+                <div class="user-form__input">
+                    <input type="email" placeholder="E-mail">
+                    <p>*</p>
+                </div>
+                <div class="user-application__form__btn">
+                    Отправить
+                </div>
+                <div class="user-form__agree">
+                    <label><input class="user-form__choice" type="checkbox" value="1" name="k"><span></span></label>
+                    <p class="user-form__agree__text">Даю своё согласие на законную обработку персональных данных.<a href="#">Правила
+                            обработки</a></p>
+                </div>
+            </form>
+            <div class="subscription__block">
+                <p class="subscription__block__header">Подпишитесь на нашу рассылку</p>
+                <p>Подпишитесь на нашу рассылку и всегда будете в курсе всех событий туристического мира, акций и розыгрышей.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="work">
+        <div class="container">
+            <p class="work__header">Кем хотите работать?</p>
+            <img class="work__main-img" src="./img/index-page/work-form.png" alt="photo">
+            <form class="user-form">
+                <div class="user-form__check">
+                    <label><input class="user-form__choice" type="radio" value="1" name="k"><span></span></label>
+                    <p class="form-checked-btn">Менеджер</p>
+                </div>
+                <div class="user-form__check">
+                    <label><input class="user-form__choice" type="radio" value="1" name="k"><span></span></label>
+                    <p class="form-checked-btn">Помощник менеджера</p>
+                </div>
+                <div class="user-form__check">
+                    <label><input class="user-form__choice" type="radio" value="1" name="k"><span></span></label>
+                    <p class="form-checked-btn">Фриланс</p>
+                </div>
+                <div class="user-form__input">
+                    <input type="text" placeholder="Город">
+                    <p>*</p>
+                </div>
+                <div class="user-form__input">
+                    <input type="text" placeholder="Имя">
+                    <p>*</p>
+                </div>
+                <div class="user-form__input">
+                    <input type="email" placeholder="E-mail">
+                    <p>*</p>
+                </div>
+                <a href="#" class="user-form__file">
+                    <img src="./img/index-page/user-form-clip.svg" alt="svg">
+                    Прикрепить файл
+                </a>
+                <div class="user-application__form__btn">
+                    Отправить
+                </div>
+                <div class="user-form__agree">
+                    <label><input class="user-form__choice" type="checkbox" value="1" name="k"><span></span></label>
+                    <p class="user-form__agree__text">Даю своё согласие на законную обработку персональных данных.<a href="#">Правила обработки</a></p>
+                </div>
+            </form>
+            <div class="work__block">
+                <p class="work__block__header">Приглашаем в команду</p>
+                <p>Станьте частью нашей креативной и профессиональной команды единомышленников. Чай и печеньки для всех сотрудников
+                бесплатны!
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <!-- Header -->
         <div class="header">
@@ -443,14 +522,14 @@
         </div> -->
     </div>
     <div class="b-wrapper">
-        <div class="hot-tours">
+        <div class="hot-tours" id="hot-tours">
             <div class="container">
                 <p class="b-wrapper__header">
                     Горящие туры
                 </p>
             </div>
         </div>
-        <div class="tours">
+        <div class="tours" id="tours">
             <div class="tours__back"></div>
             <div class="container">
                 <p class="tours__header">
@@ -547,7 +626,7 @@
                 </div>
             </div>
         </div>
-        <div class="tours-slider">
+        <div class="tours-slider" id="tours">
             <div class="tours__back"></div>
             <div class="container">
                 <p class="tours__header">
@@ -651,7 +730,7 @@
                 <div class="swiper-pagination pag5"></div>
             </div>
         </div>
-        <div class="additional-services">
+        <div class="additional-services" id="additional-services">
             <div class="container">
                 <p class="additional-services__header">
                     Дополнительные услуги
@@ -690,7 +769,7 @@
                     <a href="#" class="additional-services__content__block">
                         <div class="additional-services__content__item">
                             <div class="additional-services__content__img">
-                                <img src="./img/index-page/Бронирование гостиниц (1).svg" alt="img">
+                                <img src="./img/index-page/hotel-additional.svg" alt="img">
                             </div>
                             <p>Бронирование гостиниц</p>
                         </div>
@@ -730,7 +809,7 @@
                 </div>
             </div>
         </div>
-        <div class="additional-services-slider">
+        <div class="additional-services-slider" id="additional-services">
             <div class="container">
                 <p class="additional-services__header">
                     Дополнительные услуги
@@ -806,7 +885,7 @@
                 <div class="swiper-pagination pag4"></div>
             </div>
         </div>
-        <div class="bonus-programm">
+        <div class="bonus-programm" id="bonus">
             <div class="container">
                 <p>Бонусная программа и акции для туристов</p>
                 <div class="swiper-container slider1">
@@ -883,7 +962,7 @@
                 </div>
             </div>
         </div>
-        <div class="blog">
+        <div class="blog" id="blog">
             <div class="container">
                 <p>Блог</p>
                 <div class="swiper-container slider2">
@@ -1283,7 +1362,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-company">
+        <div class="about-company" id="about-company">
             <div class="about-company__back"></div>
             <div class="container">
                 <p class="about-company__header">
@@ -1558,16 +1637,16 @@
                 <div class="b-footer__text-box">
                     <div class="b-footer__text-column">
                         ТУРИСТАМ
-                        <a href="#" class="b-footer__text-link">Акции</a>
-                        <a href="#" class="b-footer__text-link">Дополнительные услуги</a>
-                        <a href="#" class="b-footer__text-link">Блог</a>
-                        <a href="#" class="b-footer__text-link">Туры</a>
-                        <a href="#" class="b-footer__text-link">Популярные страны</a>
+                        <a href="#bonus" class="b-footer__text-link">Акции</a>
+                        <a href="#additional-services" class="b-footer__text-link">Дополнительные услуги</a>
+                        <a href="#blog" class="b-footer__text-link">Блог</a>
+                        <a href="#tours" class="b-footer__text-link">Туры</a>
+                        <a href="#hot-tours" class="b-footer__text-link">Популярные страны</a>
                     </div>
                     <div class="b-footer__text-column">
                         КОМПАНИЯ
-                        <a href="#" class="b-footer__text-link">О компании</a>
-                        <a href="#" class="b-footer__text-link">Вакансии</a>
+                        <a href="#about-company" class="b-footer__text-link">О компании</a>
+                        <div class="b-footer__text-link" id="work-link">Вакансии</div>
                         <a href="#" class="b-footer__text-link">Контакты</a>
                         <a href="#" class="b-footer__text-link">Офисы</a>
                     </div>
@@ -1576,7 +1655,7 @@
                         <div class="b-footer__span">
                             <span>Будь в курсе последних <br> событий из мира туризма</span>
                         </div>
-                        <a href="#" class="b-footer__text-button">Подписаться</a>
+                        <div class="b-footer__text-button">Подписаться</div>
                     </div>
                 </div>
                 <div class="b-footer__links">
@@ -1594,7 +1673,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/slider1.js"></script>
     <script src="./js/scroll-animation.js"></script>
-    <!-- <script src="./js/bonus-slider.js"></script> -->
+    <script src="./js/subscription.js"></script>
     <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"
         type="text/javascript"></script>
 </body>
