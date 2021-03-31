@@ -111,14 +111,14 @@ const swiper3 = new Swiper('.slider3', {
 
 const swiper4 = new Swiper('.slider-additional', {
     direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    slidesPerColumn: 1,
+    loop: false,
+    slidesPerView: 2,
+    slidesPerColumn: 2,
     spaceBetween: 10,
     grabCursor: true,
     simulateTouch: true,
     slideToClickedSlide: true,
-    slidesPerGroup: 1,
+    slidesPerGroup: 2,
     pagination: {
         el: '.pag4',
         clickable: true,
@@ -127,6 +127,20 @@ const swiper4 = new Swiper('.slider-additional', {
         enabled: true,
         onlyInViewport: true
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            slidesPerColumn: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 17,
+        },
+        479: {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 10,
+        }
+    }
 });
 
 const swiper5 = new Swiper('.tour-slider', {
