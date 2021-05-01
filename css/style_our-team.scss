@@ -1,0 +1,1317 @@
+@import './general-styles';
+@import './header';
+@import './style-senior-manager';
+@import './style-user-form';
+@import './modal-windows';
+@import './style-footer';
+
+.page-navigation__container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    @media (max-width: 1190px) {
+        max-width: 940px;
+    }
+
+    @media (max-width: 960px) {
+        max-width: 740px;
+    }
+
+    @media (max-width: 760px) {
+        max-width: 450px;
+    }
+
+    @media (max-width: 470px) {
+        max-width: 290px;
+    }
+}
+
+.back-other-managers {
+    position: absolute;
+    background: rgba(55, 60, 79, 0.1);
+    height: 970px;
+    width: 100vw;
+    top: 1535px;
+    @media (max-width: 1201px) {
+        height: 1019px;
+        top: 1978px;
+    }
+    @media (max-width: 997px) {
+        height: 1019px;
+        top: 1905px;
+    }
+    @media (max-width: 961px) {
+        height: 944px;
+    }
+    @media (max-width: 761px) {
+        height: 1070px;
+        top: 2663px;
+    }
+    @media (max-width: 481px) {
+        display: none;
+    }
+}
+.back-user-review {
+    position: absolute;
+    background: rgba(55, 60, 79, 0.2);
+    height: 770px;
+    width: 100vw;
+    top: 2943px;
+    @media (max-width: 1201px) {
+        top: 3463px;
+    }
+    @media (max-width: 997px) {
+        top: 3389px;
+    }
+    @media (max-width: 961px) {
+        top: 3290px;
+    }
+    @media (max-width: 761px) {
+        top: 4266px;
+        height: 734px;
+    }
+    @media (max-width: 755px) {
+        height: 792px;
+    }
+    @media (max-width: 480px) {
+        top: 4166px;
+    }
+    @media (max-width: 473px) {
+        top: 3620px;
+    }
+    @media (max-width: 473px) {
+        top: 3936px;
+    }
+    @media (max-width: 473px) {
+        height: 807px;
+    }
+}
+
+.b-top {
+    height: 300px;
+    background: url(../img/our-team-page/our-team_-top-back.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    .b-top__heading {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 70px;
+        color: #ffffff;
+        padding-top: 67px;
+        @media (max-width: 960px) {
+            font-size: 45px;
+            line-height: 53px;
+        }
+        @media (max-width: 480px) {
+            font-size: 35px;
+            line-height: 41px;
+        }
+    }
+    @media (max-width: 480px) {
+        height: 200px;
+    }
+}
+
+.page-navigation {
+    margin-top: -20px;
+    .page-navigation__container {
+        display: flex;
+        .page-navigation__point {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(55, 60, 79, 0.7);
+        }
+    }
+}
+
+.b-wrapper {
+    background: url(../img/our-team-page/our-team_back.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+    // @media (max-width: 761px) {
+    //     position: relative;
+    //     z-index: -2;
+    // }
+    .container {
+        display: flex;
+        padding-top: 30px;
+        @media (max-width: 760px) {
+            min-width: auto;
+        }
+        @media (max-width: 761px) {
+            flex-direction: column;
+        }
+        .work-with-us {
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 761px) {
+                flex-direction: row;
+            }
+            .work-with-us__menu {
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 761px) {
+                    height: 180px;
+                    margin-right: 25px;
+                    margin-bottom: 40px;
+                }
+                @media (max-width: 473px) {
+                    width: 100%;
+                    margin-right: 0;
+                }
+                .work-with-us__menu-item {
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 270px;
+                    height: 45px;
+                    background: rgba(55, 60, 79, 0.3);
+                    border: 1px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    color: #ffffff;
+                    padding: 0 30px 0 30px;
+                    @media (max-width: 1200px) {
+                        width: 303px;
+                    }
+                    @media (max-width: 997px) {
+                        width: 160px;
+                        padding: 0 15px 0 15px;
+                    }
+                    @media (max-width: 761px) {
+                        width: 210px;
+                    }
+                    @media (max-width: 473px) {
+                        width: auto;
+                    }
+                }
+            }
+            .work-with-us__send-resume {
+                margin-top: 98px;
+                position: relative;
+                @media (max-width: 997px) {
+                    width: 162px;
+                    height: 266px;               
+                    margin-top: 43px;
+                }
+                @media (max-width: 761px) {
+                    margin-top: 15px;
+                    height: 177px;
+                }
+                @media (max-width: 473px) {
+                    display: none;
+                }
+                & img {
+                    position: absolute;
+                    top: -60px;
+                    @media (max-width: 1200px) {
+                        left: 22px;
+                    }
+                    @media (max-width: 997px) {
+                        width: 176px;
+                        height: 118px;
+                        left: -7px;
+                        top: -14px;
+                    }
+                    @media (max-width: 760px) {
+                        width: 220px;
+                        height: auto;
+                    }
+                }
+                .work-with-us__send-resume__block {
+                    background: #FFFFFF;
+                    box-shadow: 0px 3px 11px 5px rgba(0, 0, 0, 0.1);
+                    border-radius: 3px;
+                    width: 250px;
+                    height: 273px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-left: auto;
+                    @media (max-width: 997px) {
+                        width: 162px;
+                        height: 266px;
+                    }
+                    @media (max-width: 760px) {
+                        width: 210px;
+                        height: 114px;
+                        position: absolute;
+                        padding: 10px;
+                        top: 72px;
+                    }
+                    & p {
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 35px;
+                        text-align: center;
+                        color: #373C4F;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        @media (max-width: 997px) {
+                            line-height: 25px;
+                            width: 55%;
+                        }
+                        @media (max-width: 760px) {
+                            margin-bottom: 18px;
+                            font-size: 19px;
+                            line-height: 35px;
+                            width: auto;
+                        }
+                    }
+                    .work-with-us__send-resume__btn {
+                        background: #4CA7B0;
+                        border-radius: 3px;
+                        color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 220px;
+                        height: 60px;
+                        margin-bottom: 20px;
+                        @media (max-width: 997px) {
+                            width: 142px;
+                            height: 60px;
+                            padding: 0 15px 0 15px;
+                            text-align: center;
+                        }
+                        @media (max-width: 760px) {
+                            width: 190px;
+                            height: 60px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            padding-left: 30px;
+            width: 868px;
+            @media (max-width: 1200px) {
+                width: 636px;
+                margin: 0 auto;
+            }
+            @media (max-width: 761px) {
+                width: auto;
+                padding-left: 0;
+            }
+            .our-team {
+                width: 100%;
+                padding-bottom: 58px;
+                .managers {
+                    margin-bottom: 30px;
+                    .managers__header {
+                        font-weight: 500;
+                        font-size: 45px;
+                        line-height: 53px;
+                        text-align: center;
+                        color: #373C4F;
+                        margin-bottom: 47px;
+                        @media (max-width: 997px) {
+                            font-size: 35px;
+                            line-height: 41px;
+                        }
+                        @media (max-width: 761px) {
+                            font-size: 30px;
+                            line-height: 35px;
+                        }
+                    }
+                    .managers__text {
+                        font-size: 19px;
+                        line-height: 22px;
+                        color: #373C4F;
+                        margin-bottom: 30px;
+                        @media (max-width: 761px) {
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                    }
+                    .managers__persons {
+                        display: flex;
+                        flex-direction: column;
+                        // display: none;
+                        @media (max-width: 473px) {
+                            display: none;
+                        }
+                        .managers__top-block {
+                            display: flex;
+                            justify-content: space-between;
+                            @media (max-width: 1200px) {
+                                flex-wrap: wrap;
+                                justify-content: center;
+                            }
+                            @media (max-width: 761px) {
+                                flex-wrap: nowrap;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            @media (max-width: 473px) {
+                                align-self: center;
+                                width: 270px;
+                            }
+                            .managers__top-block__item1 {
+                                background: url(../img/our-team-page/Malova.png) no-repeat center;
+                                background-size: cover;
+                                @media (max-width: 1200px) {
+                                    margin-right: 30px;
+                                }
+                                @media (max-width: 761px) {
+                                    margin-right: 0;
+                                }
+                            }
+                            .managers__top-block__item2 {
+                                background: url(../img/our-team-page/Kisil.png) no-repeat center;
+                                background-size: cover;
+                                @media (max-width: 761px) {
+                                    margin-top: 10px;
+                                }
+                            }
+                            .managers__top-block__item3 {
+                                background: url(../img/our-team-page/Iran.png) no-repeat center;
+                                background-size: cover;
+                                @media (max-width: 1200px) {
+                                    margin-top: 10px;
+                                }
+                            }
+                            .managers__top-block__item1,
+                            .managers__top-block__item2,
+                            .managers__top-block__item3 {
+                                width: 270px;
+                                height: 393px;
+                                display: flex;
+                                align-items: flex-end;
+                                position: relative;
+                                @media (max-width: 997px) {
+                                    width: 258px;
+                                    height: 360px;
+                                }
+                                @media (max-width: 761px) {
+                                    width: 303px;
+                                    height: 393px;
+                                }
+                            }
+                            .managers__top-block__about {
+                                background: rgba(55, 60, 79, 0.8);
+                                padding: 40px 15px 20px;
+                                height: 100px;
+                                overflow: hidden;
+                                position: absolute;
+                                top: 293px;
+                                z-index: 10;
+                                transition: all 0.4s;
+                                @media (max-width: 997px) {
+                                    top: 261px;
+                                    width: 258px;
+                                }
+                                @media (max-width: 761px) {                          
+                                    top: 293px;
+                                    right: 45px;
+                                }
+                                .managers__top-block__about__name {
+                                    font-size: 19px;
+                                    line-height: 22px;
+                                    color: #FFFFFF;
+                                }
+                                .managers__top-block__about__position {
+                                    font-size: 16px;
+                                    line-height: 25px;
+                                    color: rgba(255, 255, 255, 0.8);
+                                    margin-bottom: 10px;
+                                }
+                                .managers__top-block__about__info {
+                                    display: flex;
+                                    margin-bottom: 10px;
+                                    & img {
+                                        margin-right: 10px;
+                                    }
+                                    & p {
+                                        font-size: 16px;
+                                        line-height: 25px;
+                                        color: rgba(255, 255, 255, 0.8);
+                                    }
+                                }
+                                &:hover {
+                                    height: 317px;
+                                }
+                            }
+                        }
+                    }
+                    .managers__persons__btn {
+                        background: #4CA7B0;
+                        border-radius: 3px;
+                        color: #ffffff;
+                        width: 543px;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 20px;
+                        margin-left: 275px;
+                        @media (max-width: 1200px) {
+                            margin-left: 0;
+                            align-self: center;
+                        }
+                        @media (max-width: 997px) {
+                            width: 531px;
+                            align-self: flex-end;
+                        }
+                        @media (max-width: 761px) {
+                            width: 460px;
+                            align-self: center;
+                        }
+                        @media (max-width: 473px) {
+                            display: none;
+                        }
+                    }
+                    .managers__persons__btn-inside {
+                        background: #4CA7B0;
+                        border-radius: 3px;
+                        color: #ffffff;
+                        width: auto;
+                        height: 60px;
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 20px;
+                        @media (max-width: 473px) {
+                            display: flex;
+                            width: auto;
+                        }
+                    }
+                    .managers__persons-slider {
+                        display: none;
+                        flex-direction: column;
+                        width: 98%;
+                        @media (max-width: 473px) {
+                            display: flex;
+                        }
+                        .managers__top-block {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+                            .managers__top-block__item1 {
+                                background: url(../img/our-team-page/Malova.png) no-repeat center;
+                                background-size: cover;
+                            }
+                            .managers__top-block__item2 {
+                                background: url(../img/our-team-page/Kisil.png) no-repeat center;
+                                background-size: cover;
+                            }
+                            .managers__top-block__item3 {
+                                background: url(../img/our-team-page/Iran.png) no-repeat center;
+                                background-size: cover;
+                            }
+                            .managers__top-block__item1,
+                            .managers__top-block__item2,
+                            .managers__top-block__item3 {
+                                width: 270px;
+                                height: 393px;
+                                display: flex;
+                                align-items: flex-end;
+                                position: relative;
+                            }
+                            .managers__top-block__about {
+                                background: rgba(55, 60, 79, 0.8);
+                                padding: 40px 15px 20px;
+                                height: 100px;
+                                overflow: hidden;
+                                position: absolute;
+                                top: 293px;
+                                z-index: 10;
+                                transition: all 0.4s;
+                                .managers__top-block__about__name {
+                                    font-size: 19px;
+                                    line-height: 22px;
+                                    color: #FFFFFF;
+                                }
+                                .managers__top-block__about__position {
+                                    font-size: 16px;
+                                    line-height: 25px;
+                                    color: rgba(255, 255, 255, 0.8);
+                                    margin-bottom: 10px;
+                                }
+                                .managers__top-block__about__info {
+                                    display: flex;
+                                    margin-bottom: 10px;
+                                    & img {
+                                        margin-right: 10px;
+                                    }
+                                    & p {
+                                        font-size: 16px;
+                                        line-height: 25px;
+                                        color: rgba(255, 255, 255, 0.8);
+                                    }
+                                }
+                                &:hover {
+                                    height: 317px;
+                                }
+                            }
+                        }
+                        .swiper-pagination-bullet {
+                            width: 20px;
+                            height: 20px;
+                            background: #FFFFFF;
+                            border: 3px solid #373C4F;
+                            opacity: 1;
+                            border-radius: 0;
+                        }
+                        .swiper-pagination-bullet:not(:last-child) {
+                            margin-right: 20px;
+                        }
+
+                        .swiper-pagination-bullet-active {
+                            background: #373C4F;
+                            z-index: 10;
+                        }
+                        .swiper-container {
+                            height: 395px;
+                            width: 266px;
+                        }
+                        .swiper-wrapper {
+                            height: 100%;
+                            // display: flex;
+                        }
+                        .swiper-pagination {
+                            margin-top: 20px;
+                            position: unset;
+                        }
+                    }
+                }
+            }
+            .other-managers {
+                // background: rgba(55, 60, 79, 0.1);
+                .other-managers__header {
+                    font-weight: 500;
+                    font-size: 45px;
+                    line-height: 53px;
+                    text-align: center;
+                    color: #373C4F;
+                    margin-bottom: 30px;
+                }
+                .other-managers__content {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 116px;
+                    @media (max-width: 761px) {
+                        display: none;
+                    }
+                    .managers__top-block {
+                        display: flex;
+                        flex-direction: column;
+                        @media (max-width: 1200px) {
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                        .managers__top-block__item1 {
+                            background: url(../img/our-team-page/other-manager1.png) no-repeat center;
+                        }
+                        .managers__top-block__item2 {
+                            background: url(../img/our-team-page/other-manager4.png) no-repeat center;
+                        }
+                        .managers__top-block__item3 {
+                            background: url(../img/our-team-page/other-manager2.png) no-repeat center;
+                        }
+                        .managers__top-block__item4 {
+                            background: url(../img/our-team-page/other-manager4.png) no-repeat center;
+                        }
+                        .managers__top-block__item5 {
+                            background: url(../img/our-team-page/other-manager3.png) no-repeat center;
+                        }
+                        .managers__top-block__item6 {
+                            background: url(../img/our-team-page/other-manager4.png) no-repeat center;
+                        }
+                        .managers__top-block__item1,
+                        .managers__top-block__item2,
+                        .managers__top-block__item3,
+                        .managers__top-block__item4,
+                        .managers__top-block__item5,
+                        .managers__top-block__item6 {
+                            width: 270px;
+                            height: 393px;
+                            display: flex;
+                            align-items: flex-end;
+                            position: relative;
+                            @media (max-width: 961px) {
+                                width: 259px;
+                                height: 341px;
+                            }
+                            @media (max-width: 761px) {                          
+                                width: 270px;
+                                height: 393px;
+                            }
+                        }
+                        .managers__top-block__item1,
+                        .managers__top-block__item3,
+                        .managers__top-block__item5 {
+                            margin-bottom: 30px;
+                        }
+                        .managers__top-block__about {
+                            background: rgba(55, 60, 79, 0.8);
+                            padding: 22px 15px 20px;
+                            height: 100px;
+                            overflow: hidden;
+                            position: absolute;
+                            top: 293px;
+                            z-index: 10;
+                            width: 257px;
+                            @media (max-width: 961px) {
+                                top: 242px;
+                            }
+                            @media (max-width: 761px) {
+                                top: 293px;
+                            }
+                            .managers__top-block__about__city {
+                                font-size: 16px;
+                                line-height: 25px;
+                                color: rgba(255, 255, 255, 0.8);
+                            }
+                            .managers__top-block__about__name {
+                                font-size: 19px;
+                                line-height: 22px;
+                                color: #FFFFFF;
+                            }
+                            .managers__top-block__about__position {
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: rgba(255, 255, 255, 0.8);
+                                margin-bottom: 10px;
+                            }
+                            .managers__top-block__about__info {
+                                display: flex;
+                                margin-bottom: 10px;
+                                & img {
+                                    margin-right: 10px;
+                                }
+                                & p {
+                                    font-size: 16px;
+                                    line-height: 25px;
+                                    color: rgba(255, 255, 255, 0.8);
+                                }
+                            }
+                            .managers__top-block__about__btn {
+                                width: 227px;
+                                height: 60px;
+                                background: #4CA7B0;
+                                border-radius: 3px;
+                                color: #ffffff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                &:not(:last-child) {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .other-managers__content-slider {
+                    display: none;
+                    // justify-content: space-between;
+                    margin-bottom: 116px;
+                    flex-direction: column;
+                    @media (max-width: 761px) {
+                        display: flex;
+                    }
+                    .managers__top-block {
+                        display: flex;
+                        flex-direction: column;
+                        // @media (max-width: 1200px) {
+                        //     &:last-child {
+                        //         display: none;
+                        //     }
+                        // }
+                        .managers__top-block__item1 {
+                            background: url(../img/our-team-page/other-manager1.png) no-repeat center;
+                        }
+                        .managers__top-block__item2 {
+                            background: url(../img/our-team-page/other-manager4.png) no-repeat center;
+                        }
+                        .managers__top-block__item3 {
+                            background: url(../img/our-team-page/other-manager2.png) no-repeat center;
+                        }
+                        .managers__top-block__item4 {
+                            background: url(../img/our-team-page/other-manager4.png) no-repeat center;
+                        }
+                        .managers__top-block__item5 {
+                            background: url(../img/our-team-page/other-manager3.png) no-repeat center;
+                        }
+                        .managers__top-block__item6 {
+                            background: url(../img/our-team-page/other-manager4.png) no-repeat center;
+                        }
+                        .managers__top-block__item1,
+                        .managers__top-block__item2,
+                        .managers__top-block__item3,
+                        .managers__top-block__item4,
+                        .managers__top-block__item5,
+                        .managers__top-block__item6 {
+                            width: 270px;
+                            height: 393px;
+                            display: flex;
+                            align-items: flex-end;
+                            position: relative;
+                            @media (max-width: 961px) {
+                                width: 259px;
+                                height: 341px;
+                            }
+                            @media (max-width: 761px) {                          
+                                width: 270px;
+                                height: 393px;
+                            }
+                        }
+                        .managers__top-block__item1,
+                        .managers__top-block__item3,
+                        .managers__top-block__item5 {
+                            margin-bottom: 30px;
+                        }
+                        .managers__top-block__about {
+                            background: rgba(55, 60, 79, 0.8);
+                            padding: 22px 15px 20px;
+                            height: 100px;
+                            overflow: hidden;
+                            position: absolute;
+                            top: 293px;
+                            z-index: 10;
+                            width: 257px;
+                            @media (max-width: 961px) {
+                                top: 242px;
+                            }
+                            @media (max-width: 761px) {
+                                top: 293px;
+                            }
+                            .managers__top-block__about__city {
+                                font-size: 16px;
+                                line-height: 25px;
+                                color: rgba(255, 255, 255, 0.8);
+                            }
+                            .managers__top-block__about__name {
+                                font-size: 19px;
+                                line-height: 22px;
+                                color: #FFFFFF;
+                            }
+                            .managers__top-block__about__position {
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: rgba(255, 255, 255, 0.8);
+                                margin-bottom: 10px;
+                            }
+                            .managers__top-block__about__info {
+                                display: flex;
+                                margin-bottom: 10px;
+                                & img {
+                                    margin-right: 10px;
+                                }
+                                & p {
+                                    font-size: 16px;
+                                    line-height: 25px;
+                                    color: rgba(255, 255, 255, 0.8);
+                                }
+                            }
+                            .managers__top-block__about__btn {
+                                width: 227px;
+                                height: 60px;
+                                background: #4CA7B0;
+                                border-radius: 3px;
+                                color: #ffffff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                &:not(:last-child) {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination-bullet {
+                        width: 20px;
+                        height: 20px;
+                        background: #FFFFFF;
+                        border: 3px solid #373C4F;
+                        opacity: 1;
+                        border-radius: 0;
+                    }
+                    .swiper-pagination-bullet:not(:last-child) {
+                        margin-right: 20px;
+                    }
+
+                    .swiper-pagination-bullet-active {
+                        background: #373C4F;
+                        z-index: 10;
+                    }
+                }
+                .swiper-container {
+                    height: 816px;
+                    width: 257px;
+                }
+                .swiper-wrapper {
+                    height: 100%;
+                    // display: flex;
+                }
+                .swiper-pagination {
+                    margin-top: 20px;
+                    position: unset;
+                }
+            }
+            // #other-managers-slider {
+            //     display: none;
+            // }
+        }
+    }
+
+    .user-review {
+        width: 100%;
+        height: 738px;
+        margin-top: 50px;
+        margin-bottom: 43px;
+        @media(max-width: 473px) {
+            margin-bottom: 70px;
+        }
+        .container {
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            @media(max-width: 1190px) {
+                max-width: inherit;
+            }
+            @media(max-width: 761px) {
+                justify-content: initial;
+            }
+            .user-review__header {
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 53px;
+                text-align: center;
+                color: #373C4F;
+                margin-bottom: 39px;
+                height: 53px;
+                @media(max-width: 790px) {
+                    font-size: 35px;
+                    line-height: 41px;
+                }
+            }
+            .user-review__main-img {
+                top: 278px;
+                right: 415px;
+                position: absolute;
+                @media(max-width: 1190px) {
+                    right: 34%;
+                }
+                @media(max-width: 970px) {
+                    height: 345px;
+                    right: 40%;
+                }
+                @media(max-width: 790px) {
+                    right: 38%;
+                }
+                @media(max-width: 755px) {
+                    display: none;
+                }
+            }
+            .user-form {
+                top: 188px;
+                left: 652px;
+                @media(max-width: 1190px) {
+                    right: 34%;
+                    left: 56%;
+                }
+                @media(max-width: 970px) {
+                    left: 45%;
+                }
+                @media(max-width: 790px) {
+                    left: 43%;
+                }
+                @media(max-width: 755px) {
+                    left: calc(50% - 420px / 2);
+                    top: 253px;
+                }
+                @media(max-width: 521px) {
+                    width: 420px;
+                }
+                @media(max-width: 473px) {
+                    width: 100%;
+                    left: calc(50% - 100% / 2);
+                    top: 283px;
+                }
+                .user-form__input {
+                    & input {
+                        @media(max-width: 1000px) {
+                            height: 60px;
+                        }
+                    }
+                    > p {
+                        @media(max-width: 1000px) {
+                            top: 23px;
+                        }
+                    }
+                }
+                .user-form__agree {
+                    .user-form__agree__text {
+                        color: #FFFFFF;
+                        @media(max-width: 1000px) {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+                .user-application__form__btn {
+                    @media(max-width: 1000px) {
+                        height: 60px;
+                    }
+                }
+                .user-form__check {
+                    @media(max-width: 1000px) {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+            }
+
+            .user-form__file {
+                display: block;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 25px;
+                margin-top: -7px;
+                // @media(max-width: 1000px) {
+                //     font-style: 13px;
+                //     font-weight: 16px;
+                //     margin-bottom: 13px;
+                // }
+            }
+            label {
+                width: 16px;
+                height: 16px;
+                display: block;
+                position: relative;
+            }
+            input[type="radio"] + span {
+                position: absolute;
+                left: 0; top: 0;
+                width: 100%;
+                height: 100%;
+                background: url(../img/index-page/form-round-white.svg) no-repeat center;
+                cursor: pointer;
+            }
+            input[type="radio"]:checked + span {
+                background: url(../img/index-page/form-round-cheked.png) no-repeat center;
+                background-size: contain;
+            }
+            .user-form__choice {          
+                width: 10px;
+                height: 14px;
+                margin-left: 3px;
+            }
+            .user-review__block {
+                position: absolute;
+                z-index: 3;
+                padding: 26px 117px 26px 35px;
+                position: absolute;
+                background: #FFFFFF;
+                box-shadow: 0px 3px 11px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 3px;
+                left: 259px;
+                top: 118px;
+                @media(max-width: 1190px) {
+                    left: 23%;
+                }
+                @media(max-width: 1008px) {
+                    left: 20%;
+                }
+                @media(max-width: 970px) {
+                    padding: 16px 117px 13px 35px;
+                    left: 12%;
+                } 
+                @media(max-width: 790px) {
+                    left: 9%;
+                }
+                @media(max-width: 755px) {
+                    width: 450px;
+                    height: 198px;
+                    padding: 10px;
+                    text-align: center;
+                    left: calc(50% - 450px / 2);
+                }
+                @media(max-width: 473px) {
+                    width: 90%;
+                    left: calc(50% - 90% / 2);
+                }
+                .user-review__block__header {
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 35px;
+                    color: #373C4F;
+                    width: 330px;
+                    margin-bottom: 23px;
+                    @media(max-width: 755px) {
+                        width: auto;
+                    }
+                }
+                & p {
+                    width: 300px;
+                    font-size: 19px;
+                    line-height: 29px;
+                    color: #373C4F;
+                    text-align: inherit;
+                    @media(max-width: 970px) {
+                        width: 217px;
+                    }
+                    @media(max-width: 755px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .about-company {
+        position: relative;
+        padding-bottom: 72px;
+        @media(max-width: 1000px) {
+            padding-bottom: 50px;
+        }
+        @media(max-width: 768px) {
+            padding-bottom: 40px;
+        }
+        @media(max-width: 551px) {
+            display: block;
+        }
+        @media(max-width: 480px) {
+            padding-bottom: 30px;
+        }
+        .about-company__back {
+            position: absolute;
+            z-index: 0;
+            background: url(../img/index-page/about-company-back.png) no-repeat center;
+            background-size: cover;
+            height: 358px;
+            width: 100%;
+            top: 58px;
+            @media(max-width: 987px) {
+                height: 690px;
+                top: 5px;
+            }
+            @media(max-width: 765px) {
+                height: 646px;
+                top: -48px;
+            }
+            @media(max-width: 450px) {
+                height: 943px;
+                top: -89px;
+            }
+        }
+        .container {
+            flex-direction: column;
+            @media(max-width: 1190px) {
+                max-width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .about-company__header {
+                text-align: center;
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 53px;
+                color: #373C4F;
+                margin-bottom: 65px;
+                @media(max-width: 768px) {
+                    font-size: 35px;
+                    line-height: 41px;
+                    margin-bottom: 20px;
+                }
+                @media(max-width: 480px) {
+                    font-size: 30px;
+                    line-height: 35px;
+                    margin-bottom: 28px;
+                }
+            }
+            .about-company__info {
+                position: relative;
+                margin-bottom: 72px;
+                display: flex;
+                flex-wrap: wrap;
+                @media(max-width: 1220px) {
+                    justify-content: center;
+                }
+                @media(max-width: 1000px) {
+                    margin-bottom: 60px;
+                }
+                @media(max-width: 525px) {
+                    justify-content: space-around;
+                }
+                .about-company__info__item {
+                    background: #ffffff;
+                    width: 270px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    box-shadow: 0px 3px 11px 5px rgba(0, 0, 0, 0.15);
+                    border-radius: 3px;
+                    padding: 12px 0 30px 0;
+                    &:not(:last-child) {
+                        margin-right: 30px;
+                    }
+                    @media(max-width: 1220px) {
+                        width: 228px;
+                    }
+                    @media(max-width: 1045px) {
+                        &:not(:last-child) {
+                            margin-right: 15px;
+                        }
+                    }
+                    @media(max-width: 987px) {
+                        margin-bottom: 20px;
+                    }
+                    @media(max-width: 769px) {
+                        width: 352px;
+                        padding: 12px 0;
+                        &:not(:last-child) {
+                            margin-right: 0;
+                        }
+                        &:not(:nth-child(2n)) {
+                            margin-right: 30px;
+                        }
+                    }
+                    @media(max-width: 525px) {
+                        &:not(:nth-child(2n)) {
+                            margin-right: 0;
+                        }
+                    }
+                    @media(max-width: 765px) {
+                        width: 210px;
+                    }
+                    @media(max-width: 450px) {
+                        height: 150px;
+                        margin-bottom: 10px;
+                        padding: 3px 0;
+                    }
+                    .about-company__info__item__number {
+                        font-weight: 900;
+                        font-size: 90px;
+                        line-height: 105px;
+                        color: #A5C2C5;
+                        @media(max-width: 450px) {
+                            line-height: 80px;
+                        }
+                    }
+                    .about-company__info__item__text {
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 29px;
+                        color: #373C4F;
+                        text-align: center;
+                        width: 184px;
+                        @media(max-width: 1045px) {
+                            width: 100%;
+                        }
+                        @media(max-width: 765px) {
+                            font-size: 19px;
+                        }
+                        @media(max-width: 450px) {
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+            .about-company__img-block {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 270px);
+                gap: 10px;
+                // justify-items: center;
+                @media(max-width: 760px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(4, 270px);
+                    gap: 10px;
+                }
+                .about-company__item__text {
+                    width: 240px;
+                    height: 80px;
+                    background: rgba(55, 60, 79, 0.8);
+                    font-size: 25px;
+                    line-height: 29px;
+                    color: #FFFFFF;
+                    align-self: flex-end;
+                    display: flex;
+                    align-items: flex-end;
+                    transition: all 0.4s;
+                    & p {
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+                .about-company__img-block__item1 {
+                    display: block;
+                    text-decoration: none;
+                    background: url(../img/index-page/about-us.png) no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                }
+                .about-company__img-block__item2 {
+                    display: block;
+                    text-decoration: none;
+                    background: url(../img/index-page/our-partners.png) no-repeat;
+                    background-size: cover;
+                    background-position: center;  
+                    display: flex;  
+                } 
+                .about-company__img-block__item3 {
+                    display: block;
+                    text-decoration: none;
+                    background: url(../img/index-page/reviews.png) no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                } 
+                .about-company__img-block__item4 {
+                    display: block;
+                    text-decoration: none;
+                    background: url(../img/index-page/our-team.png) no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                }
+                .tour__content__hover-block1 {
+                    background: url(../img/index-page/back-tour-hover.png);
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    opacity: 0;
+                    transition: all 0.4s;
+                    & p {
+                        font-weight: 300;
+                        font-size: 25px;
+                        line-height: 29px;
+                        color: #FFFFFF;
+                    }
+                    // @media(max-width: 760px) {
+                    //     width: inherit;
+                    // }
+                }
+                .about-company__img-block__item1,
+                .about-company__img-block__item2,
+                .about-company__img-block__item3,
+                .about-company__img-block__item4 {
+                    position: relative;
+                    &:hover {
+                        .tour__content__hover-block1 {
+                            opacity: 1;
+                        }
+                        .about-company__item__text {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
